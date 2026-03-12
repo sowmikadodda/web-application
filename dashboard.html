@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Price Comparison</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <ul class="top-nav-menu">
+            <li class="top-nav-item">
+                <a href="/dashboard" class="top-nav-link active">🏠 Home</a>
+            </li>
+            <li class="top-nav-item">
+                <a href="/profile" class="top-nav-link">👤 Profile</a>
+            </li>
+            <li class="top-nav-item">
+                <span class="user-greeting">Hi, Ollem Anitha!</span>
+            </li>
+            <li class="top-nav-item">
+                <a href="/logout" class="logout-btn">Logout</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="dashboard-header">
+            <h1 class="dashboard-title">Welcome to AI-Powered Price Comparison</h1>
+            <p class="dashboard-subtitle">Scan, Compare, Save Time and Money</p>
+        </div>
+
+        <div class="feature-cards">
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>AI-Powered Recognition</h3>
+                <p>Upload any product image and let our AI identify it instantly</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Best Price Guarantee</h3>
+                <p>Compare prices from top e-commerce platforms in real-time</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Instant Results</h3>
+                <p>Get price comparisons and direct purchase links within seconds</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>Secure Shopping</h3>
+                <p>Safe and trusted links to verified e-commerce platforms</p>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2 class="cta-title">Ready to Save Money?</h2>
+            <p class="cta-description">Upload a product image and let AI find you the best prices from top e-commerce platforms</p>
+            <a href="/project" class="cta-btn">Start Comparing</a>
+        </div>
+    </div>
+</body>
+</html>

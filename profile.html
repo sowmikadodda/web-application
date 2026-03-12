@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Price Comparison</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <ul class="top-nav-menu">
+            <li class="top-nav-item">
+                <a href="/dashboard" class="top-nav-link">🏠 Home</a>
+            </li>
+            <li class="top-nav-item">
+                <a href="/profile" class="top-nav-link active">👤 Profile</a>
+            </li>
+            <li class="top-nav-item">
+                <span class="user-greeting">Hi, Ollem Anitha!</span>
+            </li>
+            <li class="top-nav-item">
+                <a href="/logout" class="logout-btn">Logout</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="profile-container">
+            <div class="dashboard-header">
+                <h1 class="dashboard-title">👤 User Profile</h1>
+                <p class="dashboard-subtitle">Manage your account information</p>
+            </div>
+
+            <div class="profile-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Username:</label>
+                        <input type="text" value="OllemAnitha" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Email ID:</label>
+                        <input type="email" value="ollemanitha@gmail.com" readonly>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Password:</label>
+                        <input type="password" value="********" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm Password:</label>
+                        <input type="password" value="********" readonly>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full Name:</label>
+                        <input type="text" value="Ollem Anitha" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile Number:</label>
+                        <input type="tel" value="9502671906" readonly>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Date of Birth:</label>
+                    <div class="date-inputs">
+                        <input type="text" value="08" placeholder="DD" readonly>
+                        <input type="text" value="07" placeholder="MM" readonly>
+                        <input type="text" value="2003" placeholder="YYYY" readonly>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Gender:</label>
+                        <input type="text" value="Female" readonly>
+                    </div>
+                <div class="form-group">
+                    <label>Address / Location:</label>
+                    <input type="text" value="Hyderabad" readonly>
+                </div>
+
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="/dashboard" class="btn" style="width: auto; margin: 10px;">Back to Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
